@@ -1,0 +1,35 @@
+
+h1
+{
+    background-color: #2574a9;
+    background-size: 2px;
+    font-style: normal;
+    font-size: 1em;
+}
+h2
+{
+    background-color: #9a12b3;
+    font-style: normal;
+    font-size: 1em;
+}
+h3
+{
+    background-color: #db0a5b;
+    font-style: normal;
+    font-size: 1em;
+}
+#part1
+{
+    background-color:  #2574a9;
+    padding: 1.5ex;
+}
+#part2
+{
+    background-color: #9a12b3;
+    padding: 1.5pt;
+}
+#part3
+{
+    background-color: #db0a5b;
+    padding: 1.5px;
+}

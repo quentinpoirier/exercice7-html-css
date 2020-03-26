@@ -6,31 +6,34 @@
     <title>Exercie 7</title>
 </head>
 <body>
-    <p>Votre identité</p>
+    <form method="POST" action="traitement php">
+    <h1>identité</h1>
+    <div id="part1">
     <ol>
         <li><label>Nom</label> : <input type="text" name="Nom" placeholder="Nom"></li>
         <li><label>Prénom</label> : <input type="text" name="Prénom" placeholder="Prénom"></li>
         <li><label>Adresse mail</label> : <input type="email" name="Adrese mail" placeholder="Adresse mail"></li> 
     </ol>
-    
-    <p>Adresse de livraison</p>
+    </div>
+    <h2>Adresse de livraison</h3>
+    <div id="part2">
     <ol>
         <li><label for="Adresse">Adresse</label> : <textarea name="Adresse" id="Adresse"></textarea></li>
         <div><li><label>Code potal</label> : <input type="number" name="Code postal" placeholder="Code postal"></li>
         <li><label>Ville</label> : <input type="text" name="Ville" placeholder="Ville"></li>
     </ol>
-    
-    <p>Informations de réglement</p>
+    </div>
+    <h3>Informations de réglement</h3>
+    <div id="part3">
     <ol>
         <li>Type de carte banquaire :</li>
-       <ul>
-            <li><label>VISA</label> : <input type="checkbox" name="VIA"></li>
-            <li><label>Mastercard</label> : <input type="checkbox" name="Mastercard"></li>
-        </ul>
+        <p><input type="radio" name="VISA"> : <label>VISA</label><br></p><p><input type="radio" name="Mastercard"> : <label>Mastercard</label></p>
         <li><label>Numéro de carte</label> : <input type="number" name="Numéro de carte" placeholder="Numéro de carte"></li>
         <li><label>Code de sécurité</label> : <input type="password" name="Code de sécurité" placeholder="Code de carte"></li>
         <li><label>Nom du titulaire</label> : <input type="text" name="Nom du titulaire" placeholder="Nom du titulaire"></li>
     </ol>
-    <P><label>J'achète !</label> : <input type="submit" name="J'achète"></P>
+    </div>
+    <P><input type="submit" name="J'achète" value="J'achète !"></P>
+    </form>
 </body>
 </html>
