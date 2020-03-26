@@ -6,33 +6,47 @@
     <title>Exercie 7</title>
 </head>
 <body>
-    <form method="POST" action="traitement php">
-    <h1>identité</h1>
-    <div id="part1">
+    <form>
+    <fieldset id="identity">
+        <legend id="title1">Votre identité</legend>
     <ol>
-        <li><label>Nom</label> : <input type="text" name="Nom" placeholder="Nom"></li>
-        <li><label>Prénom</label> : <input type="text" name="Prénom" placeholder="Prénom"></li>
-        <li><label>Adresse mail</label> : <input type="email" name="Adrese mail" placeholder="Adresse mail"></li> 
+        <li><label for="name">Nom :</label>
+            <input type="text" id="name" name="Nom" placeholder="Do" required></li>
+        <li><label for="firstname">Prénom :</label>
+            <input type="text" id="firstname=" name="firstname" placeholder="John" required></li>
+        <li><label for="adress">Adresse mail :</label>
+            <input type="email" id="mail" name="mail" placeholder="johndo@gmail.com" required></li> 
     </ol>
-    </div>
-    <h2>Adresse de livraison</h3>
-    <div id="part2">
+    </fieldset>
+    
+    <fieldset id="delivery">
+        <legend id="title2">Adresse de livraison</legend>
     <ol>
-        <li><label for="Adresse">Adresse</label> : <textarea name="Adresse" id="Adresse"></textarea></li>
-        <div><li><label>Code potal</label> : <input type="number" name="Code postal" placeholder="Code postal"></li>
-        <li><label>Ville</label> : <input type="text" name="Ville" placeholder="Ville"></li>
+        <li><label for="adress">Adresse :</label>
+            <textarea name="adress" id="adress" cols="25" rows="5"></textarea></li>
+        <li><label for="potalcode">Code potal :</label>
+            <input type="number" id="potalcode" name="potalcode" placeholder="76000" required></li>
+        <li><label for="town">Ville :</label>
+            <input type="text" id="town" name="town" placeholder="le Havre" required></li>
     </ol>
-    </div>
-    <h3>Informations de réglement</h3>
-    <div id="part3">
+    </fieldset>
+    
+    <fieldset id="payment">
+        <legend id="title3">Information de réglement</legend>
     <ol>
-        <li>Type de carte banquaire :</li>
-        <p><input type="radio" name="VISA"> : <label>VISA</label><br></p><p><input type="radio" name="Mastercard"> : <label>Mastercard</label></p>
-        <li><label>Numéro de carte</label> : <input type="number" name="Numéro de carte" placeholder="Numéro de carte"></li>
-        <li><label>Code de sécurité</label> : <input type="password" name="Code de sécurité" placeholder="Code de carte"></li>
-        <li><label>Nom du titulaire</label> : <input type="text" name="Nom du titulaire" placeholder="Nom du titulaire"></li>
+        <li>Type de carte bancaire :<br>
+            <input type="radio" id="creditcard" name="card">
+            <label for="visa">VISA</label><br>
+            <input type="radio" id="mastercard" name="card">
+            <label for="mastercard">Matercard</label></li>
+        <li><label for="cardnumber">Numéro de carte :</label>
+            <input type="text" id="cardnumber" name="cardnumber" placeholder="565252137823" maxlength="8" minlength="8" required></li>
+        <li><label for="securitycode">Code de sécurité :</label>
+            <input type="password" id="securitycode" name="securitycode" placeholder="4592" maxlength="4" minlength="4" required></li>
+        <li><label for="holdername">Nom du titulaire :</label>
+            <input type="text" id="holdername" name="holdername" placeholder="John Do" required></li>
     </ol>
-    </div>
+    </fieldset>
     <P><input type="submit" name="J'achète" value="J'achète !"></P>
     </form>
 </body>
